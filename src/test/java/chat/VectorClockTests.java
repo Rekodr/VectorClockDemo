@@ -290,7 +290,7 @@ public class VectorClockTests {
         priorityQueue.add(b);
         priorityQueue.add(c);
 
-        Assert.assertEquals(priorityQueue.toString(), "[{\"0\":0,\"1\":1}, {\"0\":0,\"1\":2}, {\"0\":1,\"1\":0}, {\"0\":2,\"1\":0}]");
+        Assert.assertEquals("[{\"0\":0,\"1\":1}, {\"0\":0,\"1\":2}, {\"0\":1,\"1\":0}, {\"0\":2,\"1\":0}]", priorityQueue.toString() );
 
     }
 
@@ -340,8 +340,8 @@ public class VectorClockTests {
         priorityQueue.add(c1);
         priorityQueue.add(c2);
 
-        Assert.assertEquals(priorityQueue.toString(), "[{\"0\":1,\"1\":0,\"2\":0}, {\"0\":1,\"1\":1,\"2\":0}, {\"0\":1,\"1\":2,\"2\":0}, " +
-                "{\"0\":2,\"1\":0,\"2\":0}, {\"0\":3,\"1\":2,\"2\":0}, {\"0\":4,\"1\":2,\"2\":0}, {\"0\":2,\"1\":3,\"2\":0}]");
+        Assert.assertEquals( "[{\"0\":1,\"1\":0,\"2\":0}, {\"0\":1,\"1\":1,\"2\":0}, {\"0\":1,\"1\":2,\"2\":0}, " +
+                "{\"0\":2,\"1\":0,\"2\":0}, {\"0\":3,\"1\":2,\"2\":0}, {\"0\":4,\"1\":2,\"2\":0}, {\"0\":2,\"1\":3,\"2\":0}]", priorityQueue.toString());
 
     }
 

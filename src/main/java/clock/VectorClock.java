@@ -4,6 +4,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import sun.rmi.server.InactiveGroupException;
 
+import javax.print.attribute.standard.RequestingUserName;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -45,7 +46,21 @@ public class VectorClock implements Clock {
     }
 
     public boolean happenedBefore(Clock other) {
-        return false;
+        Map<String, Integer> other_clock = strToClock( other.toString() );
+        if (clock.size() <= other_clock.size()) {
+            for (String k : clock.keySet() ) {
+               if(clock.get( k ) > other_clock.getOrDefault( k, 100000000 )){
+                   return false;
+               }
+            }
+        } else {
+            for (String k : other_clock.keySet() ) {
+                if(other_clock.get( k ) < clock.getOrDefault( k, 100000000 )){
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     public String toString() {
@@ -55,8 +70,11 @@ public class VectorClock implements Clock {
 
     public void setClockFromString(String clock) {
         boolean is_valid = true;
-        Map<String, Integer> c = new HashMap<String, Integer>( strToClock( clock ) );
-        this.clock = c;
+
+        Map<String, Integer> c = strToClock( clock );
+        if( c != null) {
+            this.clock = c;
+        }
     }
 
     public int getTime(int p) {
@@ -88,7 +106,7 @@ public class VectorClock implements Clock {
             if(is_valid) {
                 return temp_clock;
             } else {
-                return new HashMap<String, Integer>( );
+                return null;
             }
         }
     }
