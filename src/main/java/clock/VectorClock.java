@@ -16,6 +16,15 @@ public class VectorClock implements Clock {
 
 
     public void update(Clock other) {
+        boolean is_valid = true;
+        Map<String,Integer> temp_clock = strToClock( other.toString() );
+        for(String key : temp_clock.keySet()) {
+            Integer curr = this.clock.getOrDefault( key, -1 );
+            if (curr < temp_clock.get( key )) {
+                this.clock.put( key, temp_clock.get( key ) );
+            }
+        }
+
     }
 
     public void setClock(Clock other) {
@@ -46,11 +55,26 @@ public class VectorClock implements Clock {
 
     public void setClockFromString(String clock) {
         boolean is_valid = true;
+        Map<String, Integer> c = new HashMap<String, Integer>( strToClock( clock ) );
+        this.clock = c;
+    }
+
+    public int getTime(int p) {
+
+        return this.clock.getOrDefault( Integer.toString( p ), 0  );
+    }
+
+    public void addProcess(int p, int c) {
+        this.clock.put( Integer.toString( p ), c );
+    }
+
+    public  Map<String, Integer> strToClock(String in) {
+        boolean is_valid = true;
         Map<String,Integer> temp_clock = new HashMap<String, Integer>( );
 
         try {
 
-            JSONObject json = new JSONObject( clock );
+            JSONObject json = new JSONObject( in );
             Iterator<String> it = json.keys();
 
             while(it.hasNext()) {
@@ -62,17 +86,10 @@ public class VectorClock implements Clock {
             is_valid = false;
         } finally {
             if(is_valid) {
-                this.clock = temp_clock;
+                return temp_clock;
+            } else {
+                return new HashMap<String, Integer>( );
             }
         }
-    }
-
-    public int getTime(int p) {
-
-        return this.clock.getOrDefault( Integer.toString( p ), 0  );
-    }
-
-    public void addProcess(int p, int c) {
-        this.clock.put( Integer.toString( p ), c );
     }
 }
