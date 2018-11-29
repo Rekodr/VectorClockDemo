@@ -13,4 +13,4 @@ java -jar server.jar
 # Start client
 java -jar client.jar
 
-Note: You can start multiple clients
+Note: You can start at least two clients
