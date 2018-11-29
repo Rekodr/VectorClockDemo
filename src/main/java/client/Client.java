@@ -19,13 +19,27 @@ public class Client {
     public static void main(String[] args) {
         try {
 
+            BufferedReader input_reader = new BufferedReader(new InputStreamReader(System.in));
+
+
             VectorClock clock = new VectorClock();
             InetAddress addr = InetAddress.getByName("127.0.0.1");
-            int server_port = 8000;
             int pid = -1;
-            DatagramSocket socket = new DatagramSocket(3000);
+            int server_port = 8000;
 
-            String username = "Ting";
+            System.out.println( "Enter your username: " );
+            String username = input_reader.readLine();
+
+            if(username.length() == 0) {
+                System.out.println( "Invalid Username" );
+                System.exit( 1 );
+            }
+
+            System.out.println( "Provide a port" );
+            int my_port = Integer.parseInt( input_reader.readLine()) ;
+
+            DatagramSocket socket = new DatagramSocket(my_port);
+
 
             Message msg = new Message(
                 MessageTypes.REGISTER,
@@ -39,25 +53,29 @@ public class Client {
 
             Message response = Message.receiveMessage( socket );
             if(response.type == MessageTypes.ACK){
-                pid = msg.pid;
+                socket.setSoTimeout(500);
+                pid = response.pid;
                 System.out.println( "Assigned PID: " + pid );
-                MessageListener listener = new MessageListener( socket, server_port, pid );
+                clock.update( response.ts );
+                System.out.println( clock.toString() );
+                clock.addProcess( pid, 0 );
+                MessageListener listener = new MessageListener( socket, server_port, clock );
                 Thread thread = new Thread( listener );
                 thread.start();
-                BufferedReader input_reader = new BufferedReader(new InputStreamReader(System.in));
 
                 while(true){
                     try {
                         String in = input_reader.readLine();
+                        clock.tick( pid );
                         if(in.length() != 0) {
+                            String text = "[" + username + "] " + in  ;
                             msg = new Message(
                                 MessageTypes.CHAT_MSG,
                                 username,
                                 pid,
                                 clock,
-                                in
+                                text
                             );
-
                             Message.sendMessage(msg, socket, addr, server_port );
                         }
                     } catch (IOException e) {
@@ -72,6 +90,8 @@ public class Client {
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (SocketException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
