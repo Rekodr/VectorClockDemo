@@ -8,9 +8,12 @@ import java.util.Comparator;
 public class MessageComparator implements Comparator<Message> {
 
     public int compare(Message lhs, Message rhs) {
-        // Write your code here
+        if(lhs.ts.happenedBefore( rhs.ts )) {
+            return -1;
+        } else if(rhs.ts.happenedBefore( lhs.ts )) {
+            return 1;
+        }
         return 0;
     }
-
 }
 

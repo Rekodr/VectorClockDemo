@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84824527-30ab-447e-afdb-65a4bdee572f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/clock/VectorClock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clock/VectorClock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/clock/VectorClockComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/clock/VectorClockComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/chat/VectorClockTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/chat/VectorClockTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/message/MessageComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/message/MessageComparator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,91 +29,55 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="20" />
+          <entry key="java" value="31" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="20" />
+          <entry key="JAVA" value="31" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3619" />
+          <entry key="java" value="4837" />
           <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3619" />
+          <entry key="JAVA" value="4837" />
           <entry key="XML" value="17" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5253772">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/lab/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="8" selection-start-line="8" selection-end-line="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/clock/VectorClock.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
-                  <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
+                <state relative-caret-position="211">
+                  <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="method#update#0;class#VectorClock#0" />
-                    <element signature="method#setClock#0;class#VectorClock#0" />
-                    <element signature="method#tick#0;class#VectorClock#0" />
-                    <element signature="method#toString#0;class#VectorClock#0" />
-                    <element signature="method#setClockFromString#0;class#VectorClock#0" />
-                    <element signature="method#getTime#0;class#VectorClock#0" />
-                    <element signature="method#strToClock#0;class#VectorClock#0" />
-                    <element signature="e#2149#2166#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/queue/PriorityQueue.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/message/Message.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
-                  <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+                <state relative-caret-position="347">
+                  <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1621#1622#0" expanded="true" />
-                    <element signature="e#1661#1662#0" expanded="true" />
-                    <element signature="e#1840#1841#0" expanded="true" />
-                    <element signature="e#1878#1879#0" expanded="true" />
-                    <element signature="e#1977#1978#0" expanded="true" />
-                    <element signature="e#2012#2013#0" expanded="true" />
-                    <element signature="e#2131#2132#0" expanded="true" />
-                    <element signature="e#2160#2161#0" expanded="true" />
-                    <element signature="e#2388#2389#0" expanded="true" />
-                    <element signature="e#2427#2428#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/clock/VectorClockComparator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -122,24 +85,24 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/clock/Clock.java">
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/message/Message.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="449">
-                  <caret line="69" selection-start-line="69" selection-end-line="69" />
+                <state relative-caret-position="245">
+                  <caret line="60" column="66" selection-start-line="60" selection-start-column="66" selection-end-line="60" selection-end-column="66" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/chat/VectorClockTests.java">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/message/MessageTypes.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="743">
-                  <caret line="282" column="28" selection-start-line="282" selection-start-column="28" selection-end-line="282" selection-end-column="28" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="150">
+                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
                 </state>
               </provider>
             </entry>
@@ -180,10 +143,11 @@
         <option value="$PROJECT_DIR$/src/message/Message.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/message/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/message/MessageComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/clock/VectorClock.java" />
         <option value="$PROJECT_DIR$/src/test/java/chat/VectorClockTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/clock/VectorClockComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/message/MessageComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lab/Main.java" />
       </list>
     </option>
   </component>
@@ -246,7 +210,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="clock" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab4" type="b2602c69:ProjectViewProjectNode" />
@@ -254,7 +218,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="queue" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,7 +228,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543444784397" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543452848639" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -281,7 +245,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VectorClockTests">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab.Main" />
+      <module name="lab4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VectorClockTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab4" />
       <extension name="coverage">
@@ -307,22 +284,6 @@
       <option name="PACKAGE_NAME" value="chat" />
       <option name="MAIN_CLASS_NAME" value="chat.VectorClockTests" />
       <option name="METHOD_NAME" value="compareWithEarlierEventMissingEvents" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VectorClockTests.compareWithParallelEventMissingPids" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chat.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="chat" />
-      <option name="MAIN_CLASS_NAME" value="chat.VectorClockTests" />
-      <option name="METHOD_NAME" value="compareWithParallelEventMissingPids" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -362,18 +323,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.VectorClockTests" />
-      <item itemvalue="JUnit.VectorClockTests.compareWithParallelEventMissingPids" />
       <item itemvalue="JUnit.VectorClockTests.compareWithEarlierEventMissingEvents" />
       <item itemvalue="JUnit.VectorClockTests.testClockSortingOne" />
       <item itemvalue="JUnit.VectorClockTests.testClockSortingTwo" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.VectorClockTests" />
         <item itemvalue="JUnit.VectorClockTests.testClockSortingOne" />
         <item itemvalue="JUnit.VectorClockTests.testClockSortingTwo" />
         <item itemvalue="JUnit.VectorClockTests.compareWithEarlierEventMissingEvents" />
-        <item itemvalue="JUnit.VectorClockTests.compareWithParallelEventMissingPids" />
       </list>
     </recent_temporary>
   </component>
@@ -391,18 +352,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VectorClockTests_compareWithEarlierEventMissingPids - 2018.11.28 at 17h 27m 36s.xml">
-      <configuration name="VectorClockTests.compareWithEarlierEventMissingPids" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorClockTests_compareWithParallelEventMissingPids - 2018.11.28 at 17h 27m 44s.xml">
-      <configuration name="VectorClockTests.compareWithParallelEventMissingPids" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorClockTests_compareWithEarlierEventMissingEvents - 2018.11.28 at 17h 27m 51s.xml">
-      <configuration name="VectorClockTests.compareWithEarlierEventMissingEvents" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="VectorClockTests - 2018.11.28 at 17h 27m 58s.xml">
-      <configuration name="VectorClockTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VectorClockTests_compareWithLaterEventMissingPids - 2018.11.28 at 17h 28m 02s.xml">
       <configuration name="VectorClockTests.compareWithLaterEventMissingPids" configurationId="JUnit" />
     </history-entry>
@@ -421,6 +370,18 @@
     <history-entry file="VectorClockTests - 2018.11.28 at 17h 38m 58s.xml">
       <configuration name="VectorClockTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="VectorClockTests - 2018.11.28 at 17h 39m 46s.xml">
+      <configuration name="VectorClockTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VectorClockTests - 2018.11.28 at 17h 40m 06s.xml">
+      <configuration name="VectorClockTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VectorClockTests - 2018.11.28 at 17h 40m 26s.xml">
+      <configuration name="VectorClockTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VectorClockTests - 2018.11.28 at 17h 40m 44s.xml">
+      <configuration name="VectorClockTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,7 +396,7 @@
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49716446" visible="true" weight="0.10989011" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49716446" visible="true" weight="0.17826618" />
       <window_info id="Structure" order="1" sideWeight="0.5028355" side_tool="true" weight="0.16910867" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -445,7 +406,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4342246" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28235295" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40748662" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -473,48 +434,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/message/MessageTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/message/ErrorCodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/message/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/message/MessageComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lab/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -532,34 +455,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/clock/Clock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/clock/VectorClock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="88" column="42" selection-start-line="88" selection-start-column="42" selection-end-line="88" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#update#0;class#VectorClock#0" />
-            <element signature="method#setClock#0;class#VectorClock#0" />
-            <element signature="method#tick#0;class#VectorClock#0" />
-            <element signature="method#toString#0;class#VectorClock#0" />
-            <element signature="method#setClockFromString#0;class#VectorClock#0" />
-            <element signature="method#getTime#0;class#VectorClock#0" />
-            <element signature="method#strToClock#0;class#VectorClock#0" />
-            <element signature="e#2149#2166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/chat/VectorClockTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
+        <state relative-caret-position="4230">
           <caret line="282" column="28" selection-start-line="282" selection-start-column="28" selection-end-line="282" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -587,10 +485,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/message/MessageComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/message/ErrorCodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/clock/Clock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/clock/VectorClock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#update#0;class#VectorClock#0" />
+            <element signature="method#setClock#0;class#VectorClock#0" />
+            <element signature="method#tick#0;class#VectorClock#0" />
+            <element signature="method#happenedBefore#0;class#VectorClock#0" />
+            <element signature="method#toString#0;class#VectorClock#0" />
+            <element signature="method#setClockFromString#0;class#VectorClock#0" />
+            <element signature="method#getTime#0;class#VectorClock#0" />
+            <element signature="method#strToClock#0;class#VectorClock#0" />
+            <element signature="e#2149#2166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/clock/VectorClockComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/message/MessageTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/message/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lab/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
