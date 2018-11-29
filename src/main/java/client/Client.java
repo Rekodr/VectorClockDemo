@@ -53,7 +53,7 @@ public class Client {
 
             Message response = Message.receiveMessage( socket );
             if(response.type == MessageTypes.ACK){
-                socket.setSoTimeout(500);
+                socket.setSoTimeout(350);
                 pid = response.pid;
                 System.out.println( "Assigned PID: " + pid );
                 clock.update( response.ts );
