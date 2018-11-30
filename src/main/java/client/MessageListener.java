@@ -28,6 +28,7 @@ public class MessageListener implements Runnable {
         if(message.ts.getTime( message.pid ) == clk.getTime( message.pid ) + 1)
             return true;
 
+        System.out.println( "first failed cm: " + message.ts.getTime( message.pid ) + " cj: " + clk.getTime( message.pid ) );
         return false;
     }
 
@@ -51,6 +52,7 @@ public class MessageListener implements Runnable {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+//        System.out.println( "failed" );
         return false;
     }
 
@@ -62,6 +64,7 @@ public class MessageListener implements Runnable {
             response = Message.receiveMessage( socket );
 
             if(response != null) {
+                System.out.println( response.message + " " + response.ts.toString() );
                 queue.add( response );
             }
             Message top = queue.peek();
@@ -73,6 +76,7 @@ public class MessageListener implements Runnable {
                     System.out.println( top.message );
                     queue.poll();
                     clock.update( top.ts );
+                    top = queue.peek();
                 } else {
                     top = null;
                 }
